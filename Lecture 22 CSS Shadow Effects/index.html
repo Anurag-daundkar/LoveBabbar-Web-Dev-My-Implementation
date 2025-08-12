@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Only Simple shadow using x and y offset */
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(21, 211, 192, 0.373);
+            border: 2px solid ;
+            box-shadow: 10px 20px rgba(7, 122, 176, 0.512) ;
+        }
+
+        /* Shadow using Blur radius */
+        .container1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(21, 211, 192, 0.373);
+            border: 2px solid ;
+            box-shadow: 10px 20px 10px rgba(7, 122, 176, 0.512) ;
+        }
+
+        /* Shadow using Spread radius */
+        .container2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(21, 211, 192, 0.373);
+            border: 2px solid ;
+            box-shadow: 10px 20px 10px 20px rgba(7, 122, 176, 0.512) ;
+        }
+
+        /* Using Inset */
+        .container3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(21, 211, 192, 0.373);
+            border: 2px solid ;
+            box-shadow: inset 20px 10px 100px 10px rgba(7, 122, 176, 0.512) ;
+        }
+
+        /* Multiple Shadows */
+        .container4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(21, 211, 192, 0.373);
+            border: 2px solid ;
+            box-shadow: 10px 20px 10px rgba(7, 122, 176, 0.512), 20px 30px 10px greenyellow, inset 20px 30px 50px rgb(27, 182, 220), -20px 50px 50px blue ;
+        }
+
+        #Box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid;
+            border-radius: 50px;
+            margin-top: 200px;
+            margin-bottom: 100px;
+            padding: 100px;
+            height: 100px;
+            width: 500px;
+            font-size: 40px;
+            background-color: antiquewhite;
+            box-shadow: inset 50px 50px 100px rgb(203, 171, 129), inset -40px -40px 100px  rgb(203, 171, 129)
+        }
+
+        .Box1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: rgba(0, 0, 0, 0.592);
+            border: 2px solid ;
+            font-size: 25px;
+            font-weight: bold;
+            text-shadow: 2px 2px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        Using X and Y offset Only
+    </div>
+
+    <div class="container1">
+        Using Blur radius
+    </div>
+
+    <div class="container2">
+        Using Spread radius
+    </div>
+
+    <div class="container3">
+        Using Inset
+    </div>
+
+    <div class="container4">
+        Multiple Shadows
+    </div>
+
+    <div id="Box">
+        Starting with Text Shadow
+    </div>
+
+    <div class="Box1">
+        Using x and y offset and blur radius
+    </div>
+
+    <div class="Box2">
+        
+    </div>
+
+    <div class="Box3">
+        
+    </div>
+
+    <div class="Box4">
+        
+    </div>
+
+
+
+
+    
+</body>
+</html>
