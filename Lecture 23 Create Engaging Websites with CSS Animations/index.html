@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations in CSS</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: rgb(174, 118, 45);
+            border: 10px solid rgb(38, 38, 129);
+            box-sizing: border-box;
+        }
+        .box{
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background-color: aqua;
+            animation-name: Movement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-delay: 5s;
+            animation-fill-mode: both;
+        }
+        @keyframes Movement{
+            from{
+                top: 0;
+                left: 0;
+                background-color: bisque;
+            }
+            to{
+                top: 0;
+                left: 1000px;
+                background-color: black;
+            }
+        }
+
+
+
+        .box1{
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            animation-timing-function: linear;
+            background-color: rgb(187, 78, 35);
+            animation-name: Movement1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes Movement1{
+            0%{
+                background-color: rgb(227, 16, 16);
+                border: 1px solid;
+                left: 0px;
+            }
+            25%{
+                background-color: rgb(222, 133, 17);
+                border: 3px solid;
+                left: 100px;
+            }
+            50%{
+                background-color: rgb(88, 226, 14);
+                border: 5px solid;
+                left: 200px;
+            }
+            75%{
+                background-color: rgb(14, 226, 166);
+                border: 7px solid;
+                left: 400px;
+            }
+            100%{
+                background-color: rgb(144, 19, 247);
+                border: 9px solid;
+                left: 600px;
+            }
+        }
+
+
+
+
+        .box2 {
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: red;
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+
+        /* Using Short Hand Notation */
+        .box3{
+            margin-top: 210px;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            background-color: rgba(0, 255, 0, 0.347); 
+            animation: BoxMovement 5s linear 2s infinite alternate running;  
+        }
+        @keyframes BoxMovement{
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 1000px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>    
+</body>
+</html>
