@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        .container{
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+            border: 2px solid aqua;
+            
+            
+            
+            transition-property: width, background-color;
+            transition-duration: 4s; 
+            transition-timing-function: linear;
+            /* transition-delay: 2s; */
+
+
+            /* transition: all 4s; */
+            box-sizing: border-box;
+        }
+        .container:hover{
+            width: 500px;
+            background-color: aqua;
+            border: 4px solid antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>
